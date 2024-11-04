@@ -7,6 +7,7 @@ set enc=utf-8
 set mouse=a
 setlocal spell
 set spelllang=en,de
+set autoindent expandtab tabstop=2 shiftwidth=2
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " For vim wiki:
