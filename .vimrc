@@ -1,3 +1,4 @@
+autocmd FileType text AnsiEsc
 syntax enable
 
 set number
@@ -7,7 +8,6 @@ set enc=utf-8
 set mouse=a
 setlocal spell
 set spelllang=en,de
-set autoindent expandtab tabstop=2 shiftwidth=2
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " For vim wiki:
@@ -20,6 +20,9 @@ call plug#begin('~/.vim/plugged')  " For Vim
 " List of plugins (example below)
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+" Use ansi flags to highlight plain text
+Plug 'vim-scripts/AnsiEsc.vim'
 
 Plug 'sirver/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
