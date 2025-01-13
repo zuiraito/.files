@@ -26,6 +26,9 @@ endsnippet
 snippet underline
 \underline{$1}$0
 endsnippet
+snippet image
+\includegraphics[width=\textwidth]{$1}
+endsnippet
 #-------------------------------Lists---------------------
 snippet list "Itemized List" w
 \begin{itemize}
@@ -45,6 +48,13 @@ snippet alist
 endsnippet
 snippet i "item" w
 \item$0
+endsnippet
+snippet table "table"
+\begin{center}
+\begin{tabular}{$1}
+	$2
+\end{tabular}
+\end{center}$0
 endsnippet
 #-------------------------------Multicol-------------------
 snippet multi "Multi col" w
