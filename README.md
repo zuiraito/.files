@@ -8,8 +8,8 @@ Dotfiles
 - kitty
 - firefox
 # Hotkeys
-| Key | Function|
-| --- | ------- |
+| Key | Function |
+| --- | -------- |
 | SUPER + q | Quit |
 | SUPER + e| Open graphical file manager |
 | CTRL + SPACE| Application Launcher (ulauncher) |
@@ -18,27 +18,22 @@ Dotfiles
 | SUPER + t | Open terminal (kitty)  |
 # .bashrc
 ## Aliases
-```
-alias x='exit'
-alias sus='systemctl suspend'
-alias ff='fastfetch'
-# Zeit
-alias monat='date +"%Y-%m"'
-alias uhr='tty-clock -c'
-alias zeit='date +%Y-%m-%d\ %a\ %H:%M'
-alias timestamp='function _timestamp(){ zeit >> "$1" && vim "$1"; }; _timestamp'
-# Workflow
-alias heute='(cd ~/0a/Listen/Tagesplan/ && ./heute.sh)'
-Location=""
-alias morgen='(cd ~/0a/Listen/Tagesplan/ $$ ./morgen.sh)'
-alias wetter='clear && curl v2.wttr.in/$Location'
-alias wttr='clear &&curl v2.wttr.in/$Location'
-alias update="firefox tagesschau.de && firefox web.whatsapp.com && firefox instagram.com && firefox https://mattermost.warr.de/ && signal-desktop && clear && echo -e '\n  done, :3.\n'"
-alias gutenmorgen='(cd ~/Scripts/ && ./morgen.sh)'
-alias hilfe='(cd ~/Scripts/ && ./hilfe.sh)'
-# Logs
-alias g="date +%y-%m-%d\ %a >> ~/0a/Listen/Baumstämme/Geld/geldlog && vim ~/0a/Listen/Baumstämme/Geld/geldlog"
-```
+| Alias | Function |
+| --- | ---------- |
+| g | manage finances |
+| x | exti terminal |
+ |sus | suspend |
+ |ff | fastfetch |
+ |monat | print year with month |
+| uhr | show a unicode clock |
+| zeit | date command but more human readable |
+| timestamp | timestamp a file |
+ |heute | todays scedule |
+ |morgen | tomorrows scedule |
+ |wetter or wttr | show human readable weather |
+ |update | launch several applications to stay up to date with news and messages |
+| gutenmorgen | launch a script to start the day |
+| hilfe | launch a script that helps out |
 - Set the location for weather
 ## Visual
 ```
