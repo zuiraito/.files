@@ -10,12 +10,14 @@ Dotfiles
 # Hotkeys
 | Key | Function |
 | --- | -------- |
+| SUPER + e | Open graphical file manager |
+| SUPER + j | switch selected window |
 | SUPER + q | Quit |
-| SUPER + e| Open graphical file manager |
-| CTRL + SPACE| Application Launcher (ulauncher) |
+| SUPER + t | Open terminal (kitty)  |
 | SUPER + (1,...,0) | Switch to desktop 1-10 |
 | SUPER + SHIFT + (1,...,0) | Move window to desktop 1-10 |
-| SUPER + t | Open terminal (kitty)  |
+| CTRL + SPACE| Application Launcher (ulauncher) |
+
 # .bashrc
 ## Aliases
 | Alias | Function |
