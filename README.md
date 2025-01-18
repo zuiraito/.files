@@ -1,6 +1,9 @@
 # .files
 Dotfiles
 
+# Applications
+- syncthing
+
 # Gnome
 Change window resizing from SUPER+MB3 to SUPER+MB2 
 ```
