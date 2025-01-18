@@ -7,6 +7,8 @@ Dotfiles
 - ulauncher
 - kitty
 - firefox
+- tuxedo-control-center
+- zathura
 # Hotkeys
 | Key | Function |
 | --- | -------- |
