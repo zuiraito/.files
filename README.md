@@ -16,10 +16,6 @@ Dotfiles
 | SUPER + (1,...,0) | Switch to desktop 1-10 |
 | SUPER + SHIFT + (1,...,0) | Move window to desktop 1-10 |
 | SUPER + t | Open terminal (kitty)  |
-| SUPER +  |  |
-| SUPER +  |  |
-| SUPER +  |  |
-| SUPER +  |  |
 # .bashrc
 ## Aliases
 ```
