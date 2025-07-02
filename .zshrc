@@ -25,7 +25,7 @@ fat() {
   file=$(fzf -q "$query")
   [ -n "$file" ] && cat "$file"
 }
-fim() {
+fathura() {
   local query file
   query="$*"
   file=$(fzf -q "$query")
