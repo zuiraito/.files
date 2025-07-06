@@ -1,0 +1,40 @@
+alias x='exit'
+alias c='clear && source ~/.zshrc'
+alias cd='z'
+#lias y='yazi'
+alias t='cd ~/Notizen/ && grep -r --include="*.md" '\''^[[:space:]]*- \[ \]'\'' . | awk -F: '\''{ printf "%-30s %s\n", $1, $2 }'\'''
+
+# Detect if we're using GNU date (Linux) or BSD date (macOS)
+if date --version >/dev/null 2>&1; then
+  # GNU date (Linux)
+  alias heute="vim ~/Notizen/daily/$(date +'%y-%m-%d_%A').md"
+  alias morgen="vim ~/Notizen/daily/$(date -d 'tomorrow' +'%y-%m-%d_%A').md"
+  alias gestern="vim ~/Notizen/daily/$(date -d 'yesterday' +'%y-%m-%d_%A').md"
+else
+  # BSD date (macOS)
+  alias heute="vim ~/Notizen/daily/$(date +'%y-%m-%d_%A').md"
+  alias morgen="vim ~/Notizen/daily/$(date -v+1d +'%y-%m-%d_%A').md"
+  alias gestern="vim ~/Notizen/daily/$(date -v-1d +'%y-%m-%d_%A').md"
+fi
+
+# fuzzy vim, cat and zathura (Usage: 'fim/fat/fathura [search term]')
+fim() {
+  local query file
+  query="$*"
+  file=$(fzf -q "$query")
+  [ -n "$file" ] && vim "$file"
+}
+fat() {
+  local query file
+  query="$*"
+  file=$(fzf -q "$query")
+  [ -n "$file" ] && cat "$file"
+}
+fathura() {
+  local query file
+  query="$*"
+  file=$(fzf -q "$query")
+  [ -n "$file" ] && fathura "$file"
+}
+
+export EDITOR=vim
